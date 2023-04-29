@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+	<title>Is This MIT Username Available?</title>
+	{% block head %}{% endblock %}
+</head>
+<body>
+	<div id="app">
+		<main>
+			{% block main %}{% endblock %}
+		</main>
+
+		<hr>
+
+		<footer>
+			<p>
+				Made by Kyle Anthony Williams '23 in quite the hurry.
+			</p>
+			<p>
+				This website is released into the public domain via
+				<a href="https://unlicense.org">the Unlicense</a>.
+			</p>
+		</footer>
+	</div>
+</body>
+</html>

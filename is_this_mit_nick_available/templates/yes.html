@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block head %}
+<style>
+	:root {
+		background-color: hsl(111, 100%, 20%);
+	}
+</style>
+{% endblock %}
+
+{% block main %}
+<h1>YES!</h1>
+<p>
+	The username you seek ({{ query }}) is available! Have fun using it!
+</p>
+<p>
+	Note that this site does not check if your username is already a mailing list.
+</p>
+<p>
+	<a href="/">Care to try again?</a>
+</p>
+{% endblock %}

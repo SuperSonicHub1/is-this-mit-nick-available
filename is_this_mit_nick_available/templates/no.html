@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block head %}
+<style>
+	:root {
+		background-color: hsl(0, 100%, 20%);
+	}
+</style>
+{% endblock %}
+
+{% block main %}
+<h1>NO!</h1>
+<p>
+	The username you seek ({{ query }}) is <strong>not</strong> available! This is because of:
+</p>
+{% for result in results %}
+	{% set email = result.email_id + "@" + result.email_domain  %}
+	<section>
+		<p>{{ result.name }}</p>
+		<p>
+			While username assignments are irreversible, you might want to contact them at
+			<a href="mailto:{{email}}">{{email}}</a>.
+		</p>
+	</section>
+{% endfor %}
+<p>
+	<a href="/">Care to try again?</a>
+</p>
+{% endblock %}
