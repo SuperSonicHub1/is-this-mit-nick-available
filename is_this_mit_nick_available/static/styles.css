@@ -22,7 +22,7 @@
 }
 
 hr {
-	color: white;
+	color: rgba(255, 255, 255, 0.87);
 }
 
 a {
@@ -84,6 +84,10 @@ button:focus-visible {
 	:root {
 		color: #213547;
 		background-color: #ffffff;
+	}
+
+	hr {
+		color: #213547;;
 	}
 
 	a:hover {
